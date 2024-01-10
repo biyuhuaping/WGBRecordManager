@@ -13,8 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol WGBRecordLocalVideoManagerDelegate <NSObject>
 @optional
 - (void)screenRecordingStartCallbackWithError:(NSError *)error;
-- (void)screenRecordingStopCallbackWithFilePath:(NSString *)filePath
-                                          error:(NSError *)error;
+- (void)screenRecordingStopCallbackWithFilePath:(NSString  * _Nullable)filePath error:(NSError *)error;
 @end
 
 @interface WGBRecordManager : NSObject

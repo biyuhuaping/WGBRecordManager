@@ -145,25 +145,24 @@
 }
 
 
-///MARK:-  <PHRecordLocalVideoManagerDelegate>
+///MARK: -  <PHRecordLocalVideoManagerDelegate>
 - (void)screenRecordingStartCallbackWithError:(NSError *)error{
     self.recordBtn.selected = YES;
     NSLog(@"启动录屏 - %@",error.localizedDescription?:@"成功!!");
 }
 
-- (void)screenRecordingStopCallbackWithFilePath:(NSString *)filePath
-                                          error:(NSError *)error{
+- (void)screenRecordingStopCallbackWithFilePath:(NSString *)filePath error:(NSError *)error{
     self.recordBtn.selected = NO;
     NSLog(@"filePath >> %@",filePath);
     NSLog(@"结束录屏 - %@",error.localizedDescription?:@"成功!!");
-    self.videoURL = [NSURL fileURLWithPath:filePath];
-    [self playVideo];
-    [self saveVideo];
+    if (filePath.length){
+        self.videoURL = [NSURL fileURLWithPath:filePath];
+        [self playVideo];
+        [self saveVideo];        
+    }
 }
 
-/**
- * 红包雨
- */
+/// 红包雨
 - (void)redpacketRain{
     // 1. 设置CAEmitterLayer
     CAEmitterLayer * redpacketLayer = [CAEmitterLayer layer];
@@ -277,7 +276,6 @@
 }
 
 #pragma mark - LoadDynamicBehaviors
-
 - (void)createDynamicBehaviors {
     UIDynamicBehavior *behavior = [[UIDynamicBehavior alloc] init];
     [self createAttachBehaviorForBalls:behavior];
@@ -296,8 +294,7 @@
 }
 
 - (UIDynamicBehavior *)createAttachmentBehaviorForBallBearing:(id<UIDynamicItem>)ballBearing toAnchor:(id<UIDynamicItem>)anchor {
-    UIAttachmentBehavior *behavior = [[UIAttachmentBehavior alloc] initWithItem:ballBearing
-                                                               attachedToAnchor:[anchor center]];
+    UIAttachmentBehavior *behavior = [[UIAttachmentBehavior alloc] initWithItem:ballBearing attachedToAnchor:[anchor center]];
     return behavior;
 }
 
@@ -321,7 +318,6 @@
 }
 
 #pragma mark - LayoutSublayer
-
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     [self layoutSublayer];
 }

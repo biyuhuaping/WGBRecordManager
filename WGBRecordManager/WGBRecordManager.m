@@ -64,8 +64,7 @@
 
 
 ///MARK:- 停止录制统一回调
-- (void)callBackDelegateStopScreenRecordWithFilePath:(NSString *_Nullable)filePath
-                                               error:(NSError *)error{
+- (void)callBackDelegateStopScreenRecordWithFilePath:(NSString *_Nullable)filePath error:(NSError *)error{
     if (self.delegate && [self.delegate respondsToSelector:@selector(screenRecordingStopCallbackWithFilePath:error:)]) {
         [self.delegate screenRecordingStopCallbackWithFilePath:filePath error:error];
     }
