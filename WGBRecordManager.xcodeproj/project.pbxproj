@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CA41FDC525F4CA48000F2E16 /* WGBRecordScreenVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA41FDC425F4CA48000F2E16 /* WGBRecordScreenVideoListViewController.m */; };
 		CAD991BD25E14E9200346017 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD991BC25E14E9200346017 /* AppDelegate.m */; };
-		CAD991C025E14E9200346017 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD991BF25E14E9200346017 /* SceneDelegate.m */; };
 		CAD991C325E14E9200346017 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD991C225E14E9200346017 /* ViewController.m */; };
 		CAD991C625E14E9200346017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD991C425E14E9200346017 /* Main.storyboard */; };
 		CAD991C825E14E9300346017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD991C725E14E9300346017 /* Assets.xcassets */; };
@@ -24,8 +23,6 @@
 		CAD991B825E14E9200346017 /* WGBRecordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGBRecordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD991BB25E14E9200346017 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAD991BC25E14E9200346017 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CAD991BE25E14E9200346017 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		CAD991BF25E14E9200346017 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		CAD991C125E14E9200346017 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CAD991C225E14E9200346017 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAD991C525E14E9200346017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,8 +66,6 @@
 			children = (
 				CAD991BB25E14E9200346017 /* AppDelegate.h */,
 				CAD991BC25E14E9200346017 /* AppDelegate.m */,
-				CAD991BE25E14E9200346017 /* SceneDelegate.h */,
-				CAD991BF25E14E9200346017 /* SceneDelegate.m */,
 				CAD991D525E14EB300346017 /* WGBRecordManager.h */,
 				CAD991D625E14EB300346017 /* WGBRecordManager.m */,
 				CAD991C125E14E9200346017 /* ViewController.h */,
@@ -160,7 +155,6 @@
 				CAD991CE25E14E9300346017 /* main.m in Sources */,
 				CA41FDC525F4CA48000F2E16 /* WGBRecordScreenVideoListViewController.m in Sources */,
 				CAD991D725E14EB300346017 /* WGBRecordManager.m in Sources */,
-				CAD991C025E14E9200346017 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
